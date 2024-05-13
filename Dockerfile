@@ -9,8 +9,7 @@ RUN apt update && \
     rustup target add x86_64-unknown-linux-musl && \
     cargo build --target x86_64-unknown-linux-musl
 
-
-
+    
 FROM scratch
 
 WORKDIR /app
